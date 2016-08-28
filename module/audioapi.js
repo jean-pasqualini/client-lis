@@ -2,8 +2,9 @@
   Module scenejs de rendu 3D cotée client
   ...
 */
-
-var module_audioapi = $.inherit (module_base,{
+define("module/audioapi", [], function()
+{
+	var module_audioapi = $.inherit (module_base,{
     
     __construction : function ()
     {
@@ -39,3 +40,7 @@ var module_audioapi = $.inherit (module_base,{
 	
     }
 });
+	
+	return {module : module_audioapi};
+});
+

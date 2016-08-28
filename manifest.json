@@ -2,9 +2,10 @@
   "name": "Lis Application Extension",
   "version": "1.0",
   "description": "Des application lis sur vos page web avec la nouvelle balise <APPLICATION>",
+  "manifest_version" : 2,
   "browser_action": {
     "default_icon": "icone.png",
-    "popup": "popup.html"
+    "default_popup": "popup.html"
   },
   "icons": {
     "16": "icone.png",
@@ -13,7 +14,7 @@
   },
   "permissions": [
     "tabs",
-    "http://*/*"
+    "*://*/*"
   ],
   "content_scripts": [
     {

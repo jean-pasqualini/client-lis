@@ -3,7 +3,9 @@
   ...
 */
 
-var module_scenejs = $.inherit (module_base,{
+define("module/scenejs", [], function()
+{
+	var module_scenejs = $.inherit (module_base,{
     
     __construction : function ()
     {
@@ -46,4 +48,8 @@ var module_scenejs = $.inherit (module_base,{
       +'<canvas id="theCanvas" width="1030" height="700" style="margin-left:auto; margin-right:auto;"></canvas> '
     +'</div>');
     }
+	});
+	
+	return {module : module_scenejs};
 });
+

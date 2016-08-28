@@ -3,8 +3,9 @@
   ...
 *
 */
-
-if(typeof jQuery == 'undefined')
+define("module/base", [], function()
+{
+	if(typeof jQuery == 'undefined')
 {
 	alert("La librairie jquery n'est pas accèsible");
 }
@@ -13,7 +14,7 @@ else
 	alert("youuupe");
 }
 
-var module_base = $.inherit ({
+module_base = $.inherit ({
     
     __constructor : function (id_app)
     {
@@ -60,3 +61,7 @@ var module_base = $.inherit ({
     }
     
 });
+
+	return {module : module_base};
+});
+

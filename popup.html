@@ -1,12 +1,4 @@
-<script>
-function LaunchAplication()
-{
-    chrome.tabs.create({
-            "url" : "client.html",
-            "selected": true
-        });
-}
-</script>
+
 
 <style>
     html, body {
@@ -41,7 +33,8 @@ function LaunchAplication()
 
 <nav>
     <menu>
-        <li> <a href="#" onclick="LaunchAplication();"> Charger une application </a> </li>
+        <li> <a id="launch"> Charger une application </a> </li>
         <li> <a href="#"> Forcer l'affichage des logs </a> </li>
     </menu>
 </nav>
+<script type="text/javascript" src="popup.js"></script>

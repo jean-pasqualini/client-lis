@@ -2,8 +2,9 @@
   Module scenejs de rendu 3D cotée client
   ...
 */
-
-var module_lisrender = $.inherit (module_base,{
+define("module/lisrender", [], function()
+{
+	var module_lisrender = $.inherit (module_base,{
     
     __construction : function ()
     {
@@ -31,3 +32,7 @@ var module_lisrender = $.inherit (module_base,{
     +'</div>');
     }
 });
+
+	return {module : module_lisrender};
+});
+

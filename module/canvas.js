@@ -2,8 +2,9 @@
   Module canvas de rendu 2D cotée client
   ...
 */
-
-var module_canvas = $.inherit (module_base,{
+define("module/canvas", [], function()
+{
+	var module_canvas = $.inherit (module_base,{
     
     __constructor : function (id_app)
     {
@@ -294,3 +295,7 @@ var module_canvas = $.inherit (module_base,{
     }
     
 });
+
+	return {module : module_canvas};
+});
+
